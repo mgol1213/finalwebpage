@@ -1,0 +1,185 @@
+<html>
+<head>
+  <title>MEDIA</title>
+  <link rel="icon" href="./accordion.png" type="image/png"/>
+  <link href="./styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+          <div class="mobile-menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        <nav>
+          <a href="about.html">About</a>
+          <a class="active" href="media.html">Media</a>
+          <a href="discography.html">Discography</a>
+          <a href="merchandise.html">Merchandise</a>
+          <a href="tourdates.html">Tour Dates</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <main>
+    <main>
+
+      <div class="page-banner media-banner">
+        <h1 class="banner-title">Media</h1>
+      </div>
+      <section>
+              <h1 class="section-title">Gallery</h1>
+
+      <section>
+        <div class="media-row media-margin">
+  <div class="media-column">
+    <img src="./concert1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" height="200" width="200">
+  </div>
+  <div class="media-column">
+    <img src="./concert2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" height="200" width="200">
+  </div>
+  <div class="media-column">
+    <img src="./concert3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="200" width="200">
+  </div>
+  <div class="media-column">
+    <img src="./concert4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="200" width="200">
+  </div>
+  <div class="media-column">
+    <img src="./concert5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" height="200" width="200">
+  </div>
+  <div class="media-column">
+    <img src="./concert6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" height="200" width="200">
+  </div>
+  <div class="media-column">
+    <img src="./concert7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" height="200" width="200">
+  </div>
+  <div class="media-column">
+    <img src="./concert8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" height="200" width="200">
+  </div>
+
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="media-modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="media-modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="./concert1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="./concert2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="./concert3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="./concert4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="./concert5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="./concert6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="./concert7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="./concert8.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="media-column">
+      <img class="demo" src="./concert1.png" onclick="currentSlide(1)" >
+    </div>
+
+    <div class="media-column">
+      <img class="demo" src="./concert2.jpg" onclick="currentSlide(2)">
+    </div>
+
+    <div class="media-column">
+      <img class="demo" src="./concert3.jpg" onclick="currentSlide(3)">
+    </div>
+
+    <div class="media-column">
+      <img class="demo" src="./concert4.jpg" onclick="currentSlide(4)">
+    </div>
+
+    <div class="media-column">
+      <img class="demo" src="./concert5.jpg" onclick="currentSlide(5)">
+    </div>
+
+    <div class="media-column">
+      <img class="demo" src="./concert6.jpg" onclick="currentSlide(6)">
+    </div>
+
+    <div class="media-column">
+      <img class="demo" src="./concert7.jpg" onclick="currentSlide(7)">
+    </div>
+
+    <div class="media-column">
+      <img class="demo" src="./concert8.jpg" onclick="currentSlide(8)">
+    </div>
+  </div>
+</div>
+      </section>
+
+      <section>
+        <h1 class="section-title"><font size="5">Video</font></h1>
+        <br>
+        <div class="margin">
+        <embed width="420" height="315" src="https://www.youtube.com/embed/SkkIwO_X4i4" >
+        <p> Start Wearing Purple </p>
+        </div>
+        <br>
+        <div class="margin">
+        <embed width="420" height="315" src="https://www.youtube.com/embed/K3SUPPeuRdU" >
+        <p> Wonderlust King </p>
+        </div>
+        <br>
+        <div class="margin">
+        <embed width="420" height="315" src="https://www.youtube.com/embed/cvB0TIs-2EE" >
+        <p> Trans-Continental Hustle </p>
+        </div>
+      </section>
+
+    </main>
+  </main>
+
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-instagram"></a>
+
+  <script src="./functions.js"></script>
+</body>
+</html>
