@@ -1,0 +1,516 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.container{
+  position: relative;
+  margin: 2px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header {
+  width: 100%;
+  height: 90px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+nav{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+nav > a {
+  width: 100%;
+  height: 400px;
+  float: left;
+  padding: 100px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mobile-menu-icon {
+  width: 36px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  padding: 15px 10px;
+  z-index: 1;
+}
+
+.mobile-menu-icon > div {
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+}
+
+/* HAMBURGER */
+.mobile-menu-icon:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: black;
+}
+
+/* READJUST WINDOW SIZE */
+@media (min-width: 600px) {
+  nav{
+    height: 44px;
+    font-size: 0;
+    display: flex !important;
+    justify-content: flex-end;
+    background-color: none;
+  }
+
+  nav > a {
+    width: auto;
+    height: 100%;
+    display: inline;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+}
+
+/* HOVER BOX */
+nav > a:hover, nav > a.active{
+  border-radius: 0%;
+  background-color: grey;
+  display: inline;
+  color: white;
+}
+
+section{
+  width: 100%;
+  height: auto;
+  margin: 25px auto;
+}
+
+.section-title{
+  margin-bottom: 15px;
+  margin-left: 80px;
+}
+
+.image-responsive{
+  width: 100%;
+  height: 190px;
+  display: block;
+}
+
+.page-banner{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+  .page-banner > .banner-title {
+    font-size: 60px;
+    color: #ffffff;
+    opacity: .85;
+    z-index: 1;
+  }
+
+@media (max-width: 600px){
+  .page-banner > .banner-title {
+    font-size: 30px;
+  }
+  }
+
+.homepage-banner{
+    background: url('./images/gogolbordellodarkphoto.jpg') no-repeat center fixed;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+  }
+
+/* ICONS SOCIAL MEDIA */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  position: fixed;
+    bottom: 4px;
+    right: 10px;
+
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  position: fixed;
+    bottom: 5px;
+    right: 60px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  position: fixed;
+    bottom: 5px;
+    right: 110px;
+}
+
+
+/*ABOUT*/
+
+.about-banner{
+  background: url('./images/gogol.jpg') no-repeat center center;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  margin-top: 90px;
+}
+
+.margin{
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.history-image{
+  max-width: 250px;
+  max-height: 250px;
+  float: left;
+  padding-right: 10px;
+}
+
+.container-image {
+  max-width: 250px;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.about-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.two-columns {
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-count: 2;
+-webkit-column-gap: 40px;
+column-gap: 40px;
+-moz-column-gap: 40px;
+}
+
+/*TOUR DATES*/
+
+.tour-banner{
+  background: url('./images/recording.jpg') no-repeat center center;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  margin-top: 90px;
+}
+
+ .tour-row::after {
+   content: "";
+   clear: both;
+   display: table;
+   padding: 5px;
+ }
+
+ .tour-column {
+   float: left;
+   width: 33.33%;
+   padding: 5px;
+ }
+
+  a.two:link, a.two:visited {
+    text-decoration: none;
+    color: purple;
+  }
+  a.two:hover {
+    opacity: 0.5;
+  }
+
+
+
+
+/*DISCOGRAPHY*/
+
+ .disc-banner{
+   background: url('./images/gogol2.jpg') no-repeat center center;
+   height: 400px;
+   width: 100%;
+   background-size: cover;
+   margin-top: 90px;
+ }
+
+.album{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*MEDIA*/
+
+ .media-banner{
+   background: url('./images/concert.jpg') no-repeat center center;
+   height: 400px;
+   width: 100%;
+   background-size: cover;
+   margin-top: 90px;
+ }
+
+
+/* LIGHTBOX */
+.media-row > .media-column {
+  padding: 0 8px;
+}
+
+.media-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Center an image */
+.media-margin{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* Create four equal columns that floats next to eachother */
+.media-column {
+  float: left;
+  width: 20%;
+  margin: 5px;
+}
+
+/* The Modal (background) */
+.media-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.media-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.media-active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+/* MERCHANDISE */
+
+ .mer-banner{
+   background: url('./images/gogol3.jpg') no-repeat center center;
+   height: 400px;
+   width: 100%;
+   background-size: cover;
+   margin-top: 90px;
+ }
+
+ul.mer-controls {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+
+.filterDiv {
+  float: left;
+  background-color: none;
+  color: #ffffff;
+  width: 200px;
+  height: 200px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.mer-container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  height: 50px;
+  flex-grow: 0;
+  width: 100%;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #A7A6BA;
+  color: white;
+}
